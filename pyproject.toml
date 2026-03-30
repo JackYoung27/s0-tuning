@@ -34,7 +34,7 @@ Repository = "https://github.com/jackyoung27/s0-tuning"
 testpaths = ["tests"]
 
 [tool.setuptools.packages.find]
-include = ["s0_tuning*"]
+include = ["s0"]
 
 [tool.ruff]
 line-length = 120

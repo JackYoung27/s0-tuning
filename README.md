@@ -39,7 +39,7 @@ trajectories already in its distribution, rather than injecting new knowledge.
 ## Usage
 
 ```python
-from s0_tuning import S0Trainer
+from s0 import S0Trainer
 
 trainer = S0Trainer.from_pretrained("Qwen/Qwen3.5-4B")
 
@@ -73,7 +73,7 @@ output = trainer.generate("Q: What is 2+2?\nA:")
 ## Installation
 
 ```sh
-pip install git+https://github.com/jackyoung27/s0-tuning.git
+pip install s0-tuning
 ```
 
 Requires PyTorch 2.0+, `transformers` >= 4.51.0, and a GPU with >= 10 GB VRAM for training.

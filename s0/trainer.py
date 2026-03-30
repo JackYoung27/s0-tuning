@@ -10,7 +10,7 @@ import torch.nn.functional as F
 from safetensors.torch import load_file, save_file
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from s0_tuning.config import S0Config
+from s0.config import S0Config
 
 log = logging.getLogger(__name__)
 

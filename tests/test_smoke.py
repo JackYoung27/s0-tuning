@@ -1,8 +1,8 @@
-from s0_tuning import S0Trainer, S0Config
-import s0_tuning
+from s0 import S0Trainer, S0Config
+import s0
 
 def test_import():
-    assert hasattr(s0_tuning, "__version__")
+    assert hasattr(s0, "__version__")
 
 def test_config_defaults():
     c = S0Config()

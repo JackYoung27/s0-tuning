@@ -1,4 +1,4 @@
-from s0_tuning import S0Config, S0Trainer
+from s0 import S0Config, S0Trainer
 
 config = S0Config(n_steps=20, lr=1e-3)
 trainer = S0Trainer.from_pretrained("Qwen/Qwen3.5-4B", config=config)
