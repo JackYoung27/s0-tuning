@@ -27,7 +27,7 @@ fla = ["flash-linear-attention"]
 dev = ["pytest", "ruff"]
 
 [project.urls]
-Homepage = "https://jackyoung.io/s0-tuning"
+Homepage = "https://www.jackyoung.io/research/s0-tuning"
 Repository = "https://github.com/jackyoung27/s0-tuning"
 
 [tool.pytest.ini_options]

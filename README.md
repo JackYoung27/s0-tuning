@@ -4,7 +4,7 @@
 
 Jack Young
 
-[Paper](https://github.com/jackyoung27/s0-tuning/blob/main/paper/s0_tuning.pdf) | [Website](https://jackyoung.io/s0-tuning)
+[Paper](https://github.com/jackyoung27/s0-tuning/blob/main/paper/s0_tuning.pdf) | [Website](https://www.jackyoung.io/research/s0-tuning)
 
 <p align="center">
   <img src="paper/fig1_hero.svg" alt="S₀ Tuning overview: learned initial states injected into recurrent layers with zero inference overhead" width="80%">
