@@ -1,0 +1,6 @@
+torch>=2.0
+transformers>=4.51.0
+datasets
+accelerate
+sentencepiece
+scipy

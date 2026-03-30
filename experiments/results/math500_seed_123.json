@@ -1,0 +1,96 @@
+{
+  "benchmark": "math500",
+  "n_train": 250,
+  "n_eval": 250,
+  "n_correct_train": 152,
+  "train_accuracy": 0.608,
+  "baseline_greedy": 0.512,
+  "tuned_greedy": 0.54,
+  "greedy_delta": 0.028000000000000025,
+  "greedy_improved": 16,
+  "greedy_degraded": 9,
+  "by_level": {
+    "1": {
+      "n": 21,
+      "baseline": 0.8571428571428571,
+      "tuned": 0.8571428571428571,
+      "delta": 0.0
+    },
+    "2": {
+      "n": 38,
+      "baseline": 0.7368421052631579,
+      "tuned": 0.7105263157894737,
+      "delta": -0.02631578947368418
+    },
+    "3": {
+      "n": 53,
+      "baseline": 0.5849056603773585,
+      "tuned": 0.6415094339622641,
+      "delta": 0.05660377358490565
+    },
+    "4": {
+      "n": 64,
+      "baseline": 0.484375,
+      "tuned": 0.5625,
+      "delta": 0.078125
+    },
+    "5": {
+      "n": 74,
+      "baseline": 0.2702702702702703,
+      "tuned": 0.2702702702702703,
+      "delta": 0.0
+    }
+  },
+  "by_subject": {
+    "Algebra": {
+      "n": 62,
+      "baseline": 0.8064516129032258,
+      "tuned": 0.8064516129032258,
+      "delta": 0.0
+    },
+    "Counting & Probability": {
+      "n": 19,
+      "baseline": 0.42105263157894735,
+      "tuned": 0.42105263157894735,
+      "delta": 0.0
+    },
+    "Geometry": {
+      "n": 22,
+      "baseline": 0.36363636363636365,
+      "tuned": 0.5,
+      "delta": 0.13636363636363635
+    },
+    "Intermediate Algebra": {
+      "n": 46,
+      "baseline": 0.1956521739130435,
+      "tuned": 0.1956521739130435,
+      "delta": 0.0
+    },
+    "Number Theory": {
+      "n": 33,
+      "baseline": 0.48484848484848486,
+      "tuned": 0.696969696969697,
+      "delta": 0.21212121212121215
+    },
+    "Prealgebra": {
+      "n": 41,
+      "baseline": 0.7560975609756098,
+      "tuned": 0.7073170731707317,
+      "delta": -0.04878048780487809
+    },
+    "Precalculus": {
+      "n": 27,
+      "baseline": 0.2222222222222222,
+      "tuned": 0.18518518518518517,
+      "delta": -0.037037037037037035
+    }
+  },
+  "hyperparams": {
+    "n_steps": 20,
+    "lr": 0.001,
+    "l2_lambda": 0.0005,
+    "alpha": 0.07,
+    "n_samples": 4
+  },
+  "seed": 123
+}

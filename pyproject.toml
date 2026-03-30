@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "s0-tuning"
+version = "0.1.0"
+description = "Tune the initial recurrent state of hybrid models. Zero inference overhead."
+readme = "README.md"
+license = "MIT"
+authors = [{name = "Jack Young"}]
+keywords = ["peft", "state-space", "recurrent", "hybrid"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0",
+    "transformers>=4.51.0",
+    "safetensors>=0.4",
+    "accelerate>=0.34.0",
+]
+
+[project.optional-dependencies]
+fla = ["flash-linear-attention"]
+dev = ["pytest", "ruff"]
+
+[project.urls]
+Homepage = "https://jackyoung.io/s0-tuning"
+Repository = "https://github.com/jackyoung27/s0-tuning"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["s0_tuning*"]
+
+[tool.ruff]
+line-length = 120

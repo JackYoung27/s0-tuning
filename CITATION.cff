@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "S0 Tuning: Zero-Overhead Adaptation of Hybrid Recurrent-Attention Models"
+type: software
+authors:
+  - family-names: Young
+    given-names: Jack
+    email: jackhyoung@gmail.com
+repository-code: "https://github.com/jackyoung27/s0-tuning"
+license: MIT
+preferred-citation:
+  type: article
+  title: "S0 Tuning: Zero-Overhead Adaptation of Hybrid Recurrent-Attention Models"
+  authors:
+    - family-names: Young
+      given-names: Jack
+  year: 2026

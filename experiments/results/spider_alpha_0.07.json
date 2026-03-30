@@ -1,0 +1,142 @@
+{
+  "benchmark": "spider",
+  "seed": 42,
+  "n_train": 500,
+  "n_eval": 1034,
+  "n_correct_train": 408,
+  "baseline_greedy": 0.7205029013539652,
+  "tuned_greedy": 0.6972920696324951,
+  "greedy_delta": -0.023210831721470093,
+  "greedy_improved": 68,
+  "greedy_degraded": 92,
+  "by_db": {
+    "battle_death": {
+      "n": 16,
+      "baseline": 0.625,
+      "tuned": 0.6875,
+      "delta": 0.0625
+    },
+    "car_1": {
+      "n": 92,
+      "baseline": 0.5108695652173914,
+      "tuned": 0.4891304347826087,
+      "delta": -0.02173913043478265
+    },
+    "concert_singer": {
+      "n": 45,
+      "baseline": 0.8666666666666667,
+      "tuned": 0.8222222222222222,
+      "delta": -0.04444444444444451
+    },
+    "course_teach": {
+      "n": 30,
+      "baseline": 0.8,
+      "tuned": 0.7666666666666667,
+      "delta": -0.033333333333333326
+    },
+    "cre_Doc_Template_Mgt": {
+      "n": 84,
+      "baseline": 0.8452380952380952,
+      "tuned": 0.8452380952380952,
+      "delta": 0.0
+    },
+    "dog_kennels": {
+      "n": 82,
+      "baseline": 0.7317073170731707,
+      "tuned": 0.7073170731707317,
+      "delta": -0.024390243902439046
+    },
+    "employee_hire_evaluation": {
+      "n": 38,
+      "baseline": 0.8157894736842105,
+      "tuned": 0.8421052631578947,
+      "delta": 0.02631578947368418
+    },
+    "flight_2": {
+      "n": 80,
+      "baseline": 0.8,
+      "tuned": 0.7375,
+      "delta": -0.0625
+    },
+    "museum_visit": {
+      "n": 18,
+      "baseline": 0.8333333333333334,
+      "tuned": 0.8888888888888888,
+      "delta": 0.05555555555555547
+    },
+    "network_1": {
+      "n": 56,
+      "baseline": 0.7321428571428571,
+      "tuned": 0.6785714285714286,
+      "delta": -0.05357142857142849
+    },
+    "orchestra": {
+      "n": 40,
+      "baseline": 0.825,
+      "tuned": 0.875,
+      "delta": 0.050000000000000044
+    },
+    "pets_1": {
+      "n": 42,
+      "baseline": 0.7857142857142857,
+      "tuned": 0.6428571428571429,
+      "delta": -0.1428571428571428
+    },
+    "poker_player": {
+      "n": 40,
+      "baseline": 1.0,
+      "tuned": 0.95,
+      "delta": -0.050000000000000044
+    },
+    "real_estate_properties": {
+      "n": 4,
+      "baseline": 0.75,
+      "tuned": 0.75,
+      "delta": 0.0
+    },
+    "singer": {
+      "n": 30,
+      "baseline": 0.8333333333333334,
+      "tuned": 0.8666666666666667,
+      "delta": 0.033333333333333326
+    },
+    "student_transcripts_tracking": {
+      "n": 78,
+      "baseline": 0.6666666666666666,
+      "tuned": 0.6025641025641025,
+      "delta": -0.0641025641025641
+    },
+    "tvshow": {
+      "n": 62,
+      "baseline": 0.7903225806451613,
+      "tuned": 0.6935483870967742,
+      "delta": -0.09677419354838701
+    },
+    "voter_1": {
+      "n": 15,
+      "baseline": 0.9333333333333333,
+      "tuned": 0.8666666666666667,
+      "delta": -0.06666666666666665
+    },
+    "world_1": {
+      "n": 120,
+      "baseline": 0.5166666666666667,
+      "tuned": 0.525,
+      "delta": 0.008333333333333304
+    },
+    "wta_1": {
+      "n": 62,
+      "baseline": 0.5161290322580645,
+      "tuned": 0.5806451612903226,
+      "delta": 0.06451612903225812
+    }
+  },
+  "hyperparams": {
+    "n_steps": 20,
+    "lr": 0.001,
+    "l2_lambda": 0.0005,
+    "alpha": 0.07,
+    "normalize_alpha": true,
+    "n_train": 500
+  }
+}

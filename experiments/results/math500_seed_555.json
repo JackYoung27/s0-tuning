@@ -1,0 +1,17 @@
+{
+  "benchmark": "math500",
+  "seed": 555,
+  "n_correct_train": 154,
+  "baseline_greedy": 0.516,
+  "tuned_greedy": 0.58,
+  "greedy_delta": 0.06399999999999995,
+  "greedy_improved": 21,
+  "greedy_degraded": 5,
+  "hyperparams": {
+    "n_steps": 20,
+    "lr": 0.001,
+    "l2": 0.0005,
+    "alpha": 0.07,
+    "normalize_alpha": true
+  }
+}

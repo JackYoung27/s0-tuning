@@ -1,0 +1,13 @@
+{
+  "benchmark": "gsm8k",
+  "seed": 555,
+  "n_train": 200,
+  "n_eval": 1319,
+  "n_correct_train": 188,
+  "baseline_greedy": 0.8506444275966641,
+  "tuned_greedy": 0.9014404852160728,
+  "greedy_delta": 0.05079605761940864,
+  "greedy_improved": 109,
+  "greedy_degraded": 42,
+  "time_s": 6580.941290855408
+}

@@ -1,0 +1,8 @@
+{
+  "seed": 123,
+  "baseline_greedy": 0.859,
+  "tuned_greedy": 0.879,
+  "greedy_delta": 0.02,
+  "greedy_improved": 85,
+  "greedy_degraded": 58
+}
