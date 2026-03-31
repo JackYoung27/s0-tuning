@@ -7,7 +7,7 @@ Jack Young
 [Paper](https://github.com/jackyoung27/s0-tuning/blob/main/paper/s0_tuning.pdf) | [Website](https://www.jackyoung.io/research/s0-tuning)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JackYoung27/s0-tuning/main/paper/fig1_hero.svg" alt="S₀ Tuning overview: learned initial states injected into recurrent layers with zero inference overhead" width="80%">
+  <img src="https://raw.githubusercontent.com/jackyoung27/s0-tuning/main/paper/fig1_hero.svg" alt="S₀ Tuning overview: learned initial states injected into recurrent layers with zero inference overhead" width="80%">
 </p>
 
 S₀ Tuning optimizes the initial hidden state (S₀) of recurrent layers in hybrid
@@ -34,7 +34,7 @@ The Spider result (no improvement on out-of-distribution SQL) supports the
 trajectory-steering mechanism: S₀ Tuning biases the model toward solution
 trajectories already in its distribution, rather than injecting new knowledge.
 
-**Scaling.** Gains increase with model size: +2.7pp at 0.8B, +23.6pp at 4B, +44.0pp at 9B (HumanEval).
+**Scaling.** Gains increase with model size: +2.6pp at 0.8B, +23.6pp at 4B, +44.0pp at 9B (HumanEval).
 
 **Cross-architecture.** On FalconH1-7B (Mamba-2), S₀ reaches 71.8% vs 71.4% for LoRA in a 3-seed comparison, statistically indistinguishable at this sample size.
 
