@@ -1,0 +1,33 @@
+% defs.tex -- Notation macros for S0 Tuning paper
+% Usage: \input{defs} in preamble
+
+% === Method name (change here to rename globally) ===
+\newcommand{\method}{\texorpdfstring{S\textsubscript{0}~tuning}{S0 tuning}\xspace}
+\newcommand{\methodshort}{\texorpdfstring{S\textsubscript{0}}{S0}\xspace}
+
+% === Architecture names ===
+\newcommand{\gdn}{GatedDeltaNet\xspace}
+\newcommand{\falcon}{FalconH1\xspace}
+
+% === State notation ===
+\newcommand{\svec}{S_0}                    % Initial state
+\newcommand{\state}{S_t}                   % State at time t
+\newcommand{\stateshape}{\mathbb{R}^{H \times K \times V}}  % State tensor shape
+
+% === Math operators ===
+\DeclareMathOperator{\KL}{KL}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\softmax}{softmax}
+\DeclareMathOperator{\AUC}{AUC}
+
+% === Convenience ===
+\newcommand{\pp}{\text{pp}\xspace}         % Percentage points (with auto-spacing)
+\newcommand{\ie}{i.e.\@\xspace}
+\newcommand{\eg}{e.g.\@\xspace}
+\newcommand{\cf}{cf.\@\xspace}
+\newcommand{\wrt}{w.r.t.\@\xspace}
+\newcommand{\etal}{et~al.\@\xspace}
+
+% === Result shorthands (update if numbers change) ===
+\newcommand{\mainresult}{+23.6}            % HumanEval Qwen3.5-4B delta
+\newcommand{\loragap}{+10.8}              % From Table 3 paired offset: 23.5 - 12.7 = 10.8
