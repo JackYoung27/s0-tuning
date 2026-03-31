@@ -13,13 +13,15 @@ Jack Young
 S₀ Tuning optimizes the initial hidden state (S₀) of recurrent layers in hybrid
 architectures (GatedDeltaNet, Mamba-2). The learned states are injected before
 each forward pass, adding zero latency at inference since recurrent models
-already maintain state. Trained states are 48 MB, training takes ~3 minutes on
-one GPU.
+already maintain state. In our main HumanEval setting, training uses roughly 48
+execution-verified solutions; trained states are 48 MB, and training takes
+about 3 minutes on one GPU.
 
 ## Results
 
-All results on Qwen3.5-4B with 20 optimization steps per task. p-values from
-Welch's t-test (unequal variances) across independent seed runs.
+Main results use Qwen3.5-4B with 20 optimization steps per task. Unless noted
+otherwise, p-values are from two-sided Welch's t-test across independent seed
+runs.
 
 | Benchmark  | Base     | + S₀ Tuning | Delta    | Seeds | p-value     |
 |------------|----------|-------------|----------|-------|-------------|
@@ -34,7 +36,9 @@ trajectories already in its distribution, rather than injecting new knowledge.
 
 **Scaling.** Gains increase with model size: +2.7pp at 0.8B, +23.6pp at 4B, +44.0pp at 9B (HumanEval).
 
-**Cross-architecture.** On FalconH1-7B (Mamba-2): 71.8% vs 71.4% LoRA baseline (experimental).
+**Cross-architecture.** On FalconH1-7B (Mamba-2), S₀ reaches 71.8% vs 71.4% for LoRA in a 3-seed comparison, statistically indistinguishable at this sample size.
+
+**LoRA framing.** The main Qwen comparison is against the best rank-24 LoRA baseline (+12.7pp). In a separate matched-budget comparison, rank-64 LoRA degrades by -15.5pp in this small-data regime.
 
 ## Usage
 
