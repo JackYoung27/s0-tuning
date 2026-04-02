@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "s0-tuning"
-version = "0.1.1"
+version = "0.1.2"
 description = "Tune the initial recurrent state of hybrid models. Zero inference overhead."
 readme = "README.md"
 license = "MIT"
@@ -29,6 +29,7 @@ dev = ["pytest", "ruff"]
 [project.urls]
 Homepage = "https://www.jackyoung.io/research/s0-tuning"
 Repository = "https://github.com/jackyoung27/s0-tuning"
+Paper = "https://arxiv.org/abs/2604.01168"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
