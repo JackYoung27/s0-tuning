@@ -4,7 +4,7 @@
 
 Jack Young
 
-[Paper](https://arxiv.org/abs/2604.01168) | [Website](https://www.jackyoung.io/research/s0-tuning)
+[Paper](https://arxiv.org/abs/2604.01168) | [Website](https://www.jackyoung.io/research/s0-tuning) | [Trained States](https://huggingface.co/JackYoung27/s0-tuning-qwen3.5-4b-humaneval) | [Dataset](https://huggingface.co/datasets/JackYoung27/humaneval-s0-train)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/jackyoung27/s0-tuning/main/paper/fig1_hero.svg" alt="S₀ Tuning overview: learned initial states injected into recurrent layers with zero inference overhead" width="80%">
@@ -72,6 +72,30 @@ trainer = S0Trainer.from_pretrained("Qwen/Qwen3.5-4B")
 trainer.load("./my_s0_states")
 trainer.activate()
 output = trainer.generate("Q: What is 2+2?\nA:")
+```
+
+### Pretrained States (HuggingFace Hub)
+
+Skip training entirely and load the states from the paper:
+
+```python
+from huggingface_hub import snapshot_download
+from s0 import S0Trainer
+
+path = snapshot_download("JackYoung27/s0-tuning-qwen3.5-4b-humaneval")
+trainer = S0Trainer.from_pretrained("Qwen/Qwen3.5-4B")
+trainer.load(path)
+trainer.activate()
+
+output = trainer.generate("def fibonacci(n):\n", max_new_tokens=256)
+print(output)
+```
+
+The training dataset (45 execution-verified HumanEval solutions) is also available:
+
+```python
+from datasets import load_dataset
+ds = load_dataset("JackYoung27/humaneval-s0-train", split="train")
 ```
 
 ## Installation
