@@ -30,6 +30,8 @@ dev = ["pytest", "ruff"]
 Homepage = "https://www.jackyoung.io/research/s0-tuning"
 Repository = "https://github.com/jackyoung27/s0-tuning"
 Paper = "https://arxiv.org/abs/2604.01168"
+"Trained States" = "https://huggingface.co/JackYoung27/s0-tuning-qwen3.5-4b-humaneval"
+"Training Data" = "https://huggingface.co/datasets/JackYoung27/humaneval-s0-train"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
